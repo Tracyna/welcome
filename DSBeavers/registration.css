@@ -1,0 +1,136 @@
+body{
+  height:;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #090117;
+  margin: 0px;
+  padding: 0px;
+}
+span, label, header, p, h1, h2, h3, h4, h5, h6{
+  color: white;
+  font-family: roboto;
+}
+.bg2{
+  Display:flex;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  margin-top: -500px; 
+}
+.container {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #120f1f;
+}
+
+.container .forms{
+  padding: 30px;
+}
+
+.container .forms .title{
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+}
+.forms .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background-color: blue;
+  border-radius: 25px;
+}
+
+.forms .input-field{
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.input-field input {
+  position:absolute;
+  height: 90%;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 38px;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.input-field input:is(:focus, :valid){
+  border-bottom-color: blue;
+}
+.input-field i{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 20px;
+  padding: 10px;
+}
+.input-field input:is(:focus, :valid) ~i {
+  color: blue;
+}
+.input-field i.icon{
+  left: 0;
+}
+.input-field i.showhidePw{
+  left: 270;
+  cursor: pointer;
+  padding: 10px;
+}
+.forms .checkbox-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.checkbox-text .checkbox-content{
+  display: flex;
+  align-items: center;
+}
+.checkbox-content input{
+  margin: 0 8px -2px 4px;
+  accent-color: blue;
+}
+.forms  a{
+  text-decoration: none;
+  color: ;
+}
+.forms  a:hover{
+  text-decoration: underline;
+}
+.forms .text{
+  font-size: 14px;
+}
+.forms .button {
+  margin-top: 35px;
+}
+.forms .button input{
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.forms .login-signup{
+  margin-top: 30px;
+  text-align: center;
+}
+.agree{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -20px;
+  text-align: center;
+}
+.agree p{
+  font-size: 12px;
+}
+.iii{
+  font-size: 12px;
+}

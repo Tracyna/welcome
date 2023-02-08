@@ -1,0 +1,174 @@
+body{
+  background-color: #120f1f;
+  margin: 0;
+}
+h3, p, h1, h2, h3, h4, h5, h6, label, span{
+  color: white;
+  font-family: roboto;
+}
+button{
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.img{
+  height: 24px;
+  width: 24px;
+  margin-bottom: 70px;
+}
+:is(.sidebar, .burger){
+  position: fixed;
+  top: 0;
+  Z-index: 2;
+}
+.sidebar{
+  z-index: 1;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: #090117;
+  transition: 0.4s;
+}
+.sidebar-header {
+  height: 72px;
+  background: rgba(0,0,0,0.1 );
+}
+.sidebar > nav { display: grid};
+.sidebar > nav:not(:last-child){
+  padding-bottom: 1rem;
+  border-bottom: 1px solid red;
+  margin-bottom: 1rem;
+}
+.sidebar > nav > button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+}
+.sidebar > nav > button > Span {
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  translate: 0 -50%;
+  padding: 10px;
+  border-radius: 4px;
+  color: gold;
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+.burger{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+ 
+.icon-title {
+  font-size: 10px;
+  padding: 0;
+  margin-top: -110px;
+  font-weight: 600;
+}
+.icon-title1 {
+  font-size: 10px;
+  padding: 0;
+  margin-top: -110px;
+  font-weight: 600;
+  color: blue;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  width: auto;
+  background-color: gold;
+  padding-left: 70px;
+}
+.welcome {
+  color: black;
+  font-size: 16px;
+}
+.widget1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 70px;
+  width: auto;
+  height: auto;
+  background-color: #090117;
+}
+.earnings h4{
+  margin-left: px;
+  margin-top: -10px;
+  color: grey;
+  font-size: 10px;
+  
+}
+.earnings h2{
+  margin-top: 10px;
+  font-size: 16px;
+}
+.earnings1 h4{
+  margin-right: 0px;
+  margin-top: -10px;
+  color: grey;
+  font-size: 10px;
+  
+}
+.earnings1 {
+  padding-right: 16px;
+}
+.earnings1 h2{
+  margin-top: 10px;
+  font-size: 16px;
+}
+.live{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.signal{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  margin-top: -2px;
+  background-color: green;
+  animation:dots 0.1s ease-in-out infinite;
+}
+@keyframes dots{
+  0%, 40%, 100% { transform: scale(0.5);
+}
+20%{transform:scale(0.9)}
+}
+
+.onboard{
+  padding-left: 70px;
+  margin-top: 30px;
+  height: 100;
+  width: 20%;
+}
+.guidelines {
+  padding-left: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  color: grey;
+}
+
+
+
+@media screen and (max-width:600px;){
+  
+}
